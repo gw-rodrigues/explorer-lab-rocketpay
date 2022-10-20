@@ -23,6 +23,10 @@ body {
 
   display: flex;
   place-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+  gap: 1rem;
 
   min-height: 100vh;
 }
@@ -49,4 +53,37 @@ body {
 #app header {
   display: flex;
   align-items: center;
+}
+
+.tips {
+  width: 90%;
+  max-width: 32rem;
+  height: auto;
+  padding: 1.5rem 2.8rem 1.5rem 2.8rem;
+  background: #202024;
+  border: 0.1rem solid #323238;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01px;
+  text-transform: uppercase;
+  color: #e1e1e6;
+  opacity: 0.8;
+}
+
+.tips h3 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.tips ul {
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.tips ul li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

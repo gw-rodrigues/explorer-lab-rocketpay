@@ -13,6 +13,9 @@ function setCardType(type) {
   const colors = {
     visa: ["#436D99", "#2D57F2"],
     mastercard: ["#DF6F29", "#C69347"],
+    amex: ["#0E3E4E", "#789EAE"],
+    apple: ["#6A6A6A", "#FFFFFF"],
+    paysafe: ["#393939", "#FF6F5B"],
     default: ["black", "gray"],
   }
 
@@ -72,6 +75,21 @@ const cardNumberPattern = {
       mask: "0000 0000 0000 0000",
       regex: /(^5[1-5]\d{0,2}|^22[2-9]\d|^2[3-7]\d{0,2})\d{0,12}/,
       cardType: "mastercard",
+    },
+    {
+      mask: "0000 0000 0000 0000",
+      regex: /^37\d{0,14}/,
+      cardType: "amex",
+    },
+    {
+      mask: "0000 0000 0000 0000",
+      regex: /^8888\d{0,12}/,
+      cardType: "apple",
+    },
+    {
+      mask: "0000 0000 0000 0000",
+      regex: /^1234\d{0,12}/,
+      cardType: "paysafe",
     },
     {
       mask: "0000 0000 0000 0000",
