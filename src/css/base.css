@@ -23,10 +23,6 @@ body {
 
   display: flex;
   place-items: center;
-  justify-content: center;
-
-  flex-direction: column;
-  gap: 1rem;
 
   min-height: 100vh;
 }
@@ -56,9 +52,8 @@ body {
 }
 
 .tips {
-  width: 90%;
-  max-width: 32rem;
-  height: auto;
+  width: 300px;
+  height: 130px;
   padding: 1.5rem 2.8rem 1.5rem 2.8rem;
   background: #202024;
   border: 0.1rem solid #323238;
@@ -69,7 +64,10 @@ body {
   letter-spacing: 0.01px;
   text-transform: uppercase;
   color: #e1e1e6;
-  opacity: 0.8;
+  opacity: 0.95;
+  position: absolute;
+  top: -280px;
+  display: none;
 }
 
 .tips h3 {
