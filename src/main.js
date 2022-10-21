@@ -116,6 +116,21 @@ cardNumberMasked.on("accept", () => {
   updateCardNumber(cardNumberMasked.value)
 })
 
+/**
+ * TIPS
+ */
+
+cardNumber.addEventListener("focus", () => {
+  document.querySelector(".tips").style.display = "block"
+})
+
+cardNumber.addEventListener("focusout", () => {
+  document.querySelector(".tips").style.display = "none"
+})
+/**
+ *
+ */
+
 const addButton = document.querySelector("#add-card")
 addButton.addEventListener("click", () => {
   alert("Cartão adicionado!")
